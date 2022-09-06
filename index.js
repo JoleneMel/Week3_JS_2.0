@@ -13,8 +13,10 @@ console.log(ages2);
 
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last 
 //element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
+
 //Arrays start off with 0s
 //the length of an array is the amount of elements (which would be 8 elements, while the 0 based index system makes it so -1 is needed to get the last part)
+//As you can see below we can use this logic to make a function 
 console.log(ages[ages.length - 1] - ages[0]);
 
 //This can also be made into a function 
