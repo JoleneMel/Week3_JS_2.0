@@ -15,12 +15,14 @@ console.log(ages2);
 
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last 
 //element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
-
+console.log("");
+//The above is just to add some spacing 
+console.log("Programmatically subtract the value of the first element in the array from the value in the last element of the array");
 /*Arrays start off with 0s
 the length of an array is the amount of elements (which would be 8 elements, while the 0 based index system makes it so -1 is needed to get the last part)
 As you can see below we can use this logic to make a function */
-console.log("With just the logic")
-console.log(ages[ages.length - 1] - ages[0]);
+
+console.log("With just the logic", + ages[ages.length - 1] - ages[0]);
 
 /* Functions use (parameters) a parameter is the named placeholder for whatever data you want to pass into the function. 
 
@@ -58,13 +60,15 @@ console.log("With the return function", + subFirstEleLastEleReturn(ages2));
 
 
 // Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
-ages.push([33]);
-ages2.push([78]);
-
+ages.push(33);
+ages2.push(78);
+console.log("");
 //Since I had made this into a function I do not need to restate the logic but rather call the functions again below
-console.log("After I added numbers to the arrays")
+console.log("After I added numbers to the arrays");
+console.log("Console.log function");
 subFirstEleLastEleConsole(ages);
-console.log(subFirstEleLastEleReturn(ages2));
+
+console.log("With the return function", +subFirstEleLastEleReturn(ages2));
 
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
@@ -78,18 +82,19 @@ let total = 0;
 ages.forEach(item => total += item); 
 //Then we take the total and divide by the amount of elements within the array aka array/length
 console.log('Average is: ' + ' ' + total / ages.length, + "using the .forEach"); 
+console.log("");
 /* Or a for loop or while loop */
 let sum = 0; 
 for(let i = 0; i < ages2.length; i++) {
     sum += ages2[i];
 }//We need to do the average calulation outside of the loop 
-console.log("Using a for loop to find the average", + sum/ ages2.length);
-
+console.log("Using a incrementing for loop to find the average", + sum/ ages2.length);
+//Going backwards
 let sum2 = 0; 
-for(let i = ages.length - 1; i >= 0; i--) {
+for(let i = ages2.length-1; i >= 0; i--) {
     sum2 += ages2[i];
 }//We need to do the average calulation outside of the loop 
-console.log("Using a for loop to find the average", + sum2/ ages2.length);
+console.log("Using a decrementing for loop to find the average", + sum2/ ages.length);
 
 //Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 
