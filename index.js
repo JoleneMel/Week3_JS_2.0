@@ -8,7 +8,9 @@ let ages2 = [];
 ages2.push([3, 9, 23, 64, 2, 8, 28, 93]);
 
 //To see that they have the same values you can console.log it 
+console.log("ages array below");
 console.log(ages);
+console.log("ages2 array below");
 console.log(ages2);
 
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last 
@@ -49,8 +51,16 @@ let subFirstEleLastEleReturn = (array) => {
 
 //This is how you call a function without a console.log
 console.log(subFirstEleLastEleReturn(ages2));
-// Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 
+
+// Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
+ages.push([33]);
+ages2.push([78]);
+
+//Since I had made this into a function I do not need to restate the logic but rather call the functions again below
+console.log("After I added numbers to the arrays")
+subFirstEleLastEleConsole(ages);
+console.log(subFirstEleLastEleReturn(ages2));
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
 
