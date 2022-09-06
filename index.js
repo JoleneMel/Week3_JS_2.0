@@ -31,7 +31,7 @@ The code is exucuted within the {}, thats the point of the function to do what i
 ages and ages2 which are in the global scope of the project. 
 */
 
-//This can also be made into a function 
+//This can also be made into a function without ES6 you will need to declare it as a function
 function subFirstEleLastEleConsole(array) {
     console.log(array[array.length - 1] - array[0]);
 }
@@ -40,8 +40,8 @@ function subFirstEleLastEleConsole(array) {
 //This is how you call function that already outputs the data to the console.log
 subFirstEleLastEleConsole(ages);
 
-//Return 
-function subFirstEleLastEleReturn(array) {
+//Return utilizing ES6 rules 
+let subFirstEleLastEleReturn = (array) => {
     return array[array.length - 1] - array[0];
 }
 //In this example this is how we would return the data we would like, a return when it is simple like this can be compared to a question you ask someone
