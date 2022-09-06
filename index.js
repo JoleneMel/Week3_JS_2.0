@@ -47,10 +47,11 @@ subFirstEleLastEleConsole(ages);
 let subFirstEleLastEleReturn = (array) => {
     return array[array.length - 1] - array[0];
 }
-//In this example this is how we would return the data we would like, a return when it is simple like this can be compared to a question you ask someone
-//The return will provide that answer. 
+/*In this example this is how we would return the data we would like, a return when it is simple like this can be compared to a question you ask someone
+The return will provide that answer. 
 
-//This is how you call a function without a console.log
+This is how you call a function without a console.log
+*/
 console.log(subFirstEleLastEleReturn(ages2));
 
 
