@@ -131,8 +131,65 @@ do {
 }
 while (y >= 0); 
 console.log("Using a decrementing do while loop to find the average", + sum6/ ages.length);
-//Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+console.log("")
 
+//Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+
+//+= shorter way, => points to function 
+let totesLetters = 0;
+names.forEach(item => totesLetters += item.length); 
+
+console.log('Average letters is: ' + totesLetters / names.length); 
+
+/* Or a for loop or while loop */
+let sumLetters = 0; 
+for(let i = 0; i < names.length; i++) {
+    sumLetters += names[i].length;
+}//We need to do the average calulation outside of the loop 
+console.log("Using a incrementing for loop to find the average", + sumLetters/ names.length);
+//Going backwards
+let sumLetters2 = 0; 
+for(let i = names.length-1; i >= 0; i--) {
+    sumLetters2 += names[i].length;
+}//We need to do the average calulation outside of the loop 
+console.log("Using a decrementing for loop to find the average", + sumLetters2/ names.length);
+console.log("");
+
+let sumLetters3 = 0; 
+let a = 0;
+while(a < names.length) {
+    sumLetters3 += names[a].length;
+    a++;
+}
+console.log("Using a incrementing while loop to find the average", + sumLetters3/ names.length);
+
+let sumLetters4 = 0; 
+let b = names.length - 1;
+while(b >= 0) {
+    sumLetters4 += names[b].length;
+    b--;
+}
+console.log("Using a decrementing while loop to find the average", + sumLetters4/ names.length);
+console.log("");
+
+let sumLetters5 = 0;
+let c = 0;
+do {
+    sumLetters5 += names[c].length;
+  c++;
+}
+while (c < names.length); 
+console.log("Using a incrementing do while loop to find the average", + sumLetters5/ names.length);
+
+let sumLetters6 = 0;
+let d = names.length - 1;
+do {
+    sumLetters6 += names[d].length;
+  d--;
+}
+while (d >= 0); 
+console.log("Using a decrementing do while loop to find the average", + sumLetters6/ names.length);
 // Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
 
 // Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
