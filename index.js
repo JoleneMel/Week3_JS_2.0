@@ -33,7 +33,8 @@ function subFirstEleLastEleReturn(array) {
 //In this example this is how we would return the data we would like, a return when it is simple like this can be compared to a question you ask someone
 //The return will provide that answer. 
 
-
+//This is how you call a function without a console.log
+console.log(subFirstEleLastEleReturn(ages2));
 // Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
