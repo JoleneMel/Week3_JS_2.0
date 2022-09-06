@@ -26,6 +26,9 @@ reusable to now only output one time, which is not the optimal way to program. M
 
 Console.logs used within functions also can hinder the power of a function, this can make it so it can not properly pass on information to 
 another function and only output the data to the console. 
+
+The code is exucuted within the {}, thats the point of the function to do what is within the function, Also when within {} that is within the function scope unlike 
+ages and ages2 which are in the global scope of the project. 
 */
 
 //This can also be made into a function 
