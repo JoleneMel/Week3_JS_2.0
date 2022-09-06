@@ -1,13 +1,13 @@
 //This is a set up for a redo of a old project, saw other ways to do it and I want to do it again but differently 
 // Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
-//The above is one way to create an array
+/*The above is one way to create an array */
 
-//Another way is to set up the array and then populate it with push 
+/*Another way is to set up the array and then populate it with push */ 
 let ages2 = [];
 ages2.push([3, 9, 23, 64, 2, 8, 28, 93]);
 
-//To see that they have the same values you can console.log it 
+/* To see that they have the same values you can console.log it */ 
 console.log("ages array below");
 console.log(ages);
 console.log("ages2 array below");
@@ -16,9 +16,9 @@ console.log(ages2);
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last 
 //element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
 
-//Arrays start off with 0s
-//the length of an array is the amount of elements (which would be 8 elements, while the 0 based index system makes it so -1 is needed to get the last part)
-//As you can see below we can use this logic to make a function 
+/*Arrays start off with 0s
+the length of an array is the amount of elements (which would be 8 elements, while the 0 based index system makes it so -1 is needed to get the last part)
+As you can see below we can use this logic to make a function */
 console.log(ages[ages.length - 1] - ages[0]);
 
 /* Functions use (parameters) a parameter is the named placeholder for whatever data you want to pass into the function. 
