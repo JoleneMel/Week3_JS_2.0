@@ -250,6 +250,18 @@ do {
 while (h >= 0); 
 console.log("Using a decrementing do while loop " + space6);
 console.log("");
+
+//easy way to create an empty array
+let nameLengths = [];
+
+//Write a loop to iterate over the previously created names array 
+ names.forEach(item => nameLengths.splice(nameLengths.length, 0, item.length));
+ console.log(nameLengths);
+
+ let nameTotal = 0;
+ nameLengths.forEach(item => nameTotal += item.length);
+ console.log(nameTotal);
+ 
 // How do you access the last element of any array?
 
 // How do you access the first element of any array?
