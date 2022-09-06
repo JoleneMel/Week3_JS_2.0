@@ -196,7 +196,60 @@ console.log("");
 
 console.log("Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.");
 
+let namesGoAround = '';
+names.forEach(item => namesGoAround += item + ' '); 
+console.log(namesGoAround);
 
+/* Or a for loop or while loop */
+let space = ""; 
+//need to use names[i].length since it is a string to convert it to a number 
+for(let i = 0; i < names.length; i++) {
+    space += names[i] + " ";
+}//We need to do the average calulation outside of the loop 
+console.log("Using a incrementing for loop " + space);
+//Going backwards
+let space2 = ""; 
+for(let i = names.length-1; i >= 0; i--) {
+    space2 += names[i] + " ";
+}//We need to do the average calulation outside of the loop 
+console.log("Using a decrementing for loop " + space2);
+console.log("");
+
+let space3 = "";
+let e = 0;
+while(e < names.length) {
+    space3 += names[e] + " ";
+    e++;
+}
+console.log("Using a incrementing while loop " + space3);
+
+let space4 = "";
+let f = names.length - 1;
+while(f >= 0) {
+    space4 += names[f] + " ";
+    f--;
+}
+console.log("Using a decrementing while loop " + space4);
+console.log("");
+
+let space5 = "";
+let g = 0;
+do {
+    space5 += names[g] + " ";
+  g++;
+}
+while (g < names.length); 
+console.log("Using a incrementing do while loop " + space5);
+
+let space6 = "";
+let h = names.length - 1;
+do {
+    space6 += names[h] + " ";
+  h--;
+}
+while (h >= 0); 
+console.log("Using a decrementing do while loop " + space6);
+console.log("");
 // How do you access the last element of any array?
 
 // How do you access the first element of any array?
