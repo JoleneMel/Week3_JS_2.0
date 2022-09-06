@@ -136,6 +136,7 @@ console.log("")
 //Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 
+console.log("Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.");
 //+= shorter way, => points to function 
 let totesLetters = 0;
 names.forEach(item => totesLetters += item.length); 
@@ -190,7 +191,7 @@ do {
 }
 while (d >= 0); 
 console.log("Using a decrementing do while loop to find the average", + sumLetters6/ names.length);
-// Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+
 
 // Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 
