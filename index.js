@@ -113,6 +113,24 @@ while(j >= 0) {
 }
 console.log("Using a decrementing while loop to find the average", + sum4/ ages.length);
 console.log("");
+
+let sum5 = 0;
+let x = 0;
+do {
+  sum5 += ages[x];
+  x++;
+}
+while (x < ages.length); 
+console.log("Using a incrementing do while loop to find the average", + sum5/ ages.length);
+
+let sum6 = 0;
+let y = ages.length - 1;
+do {
+  sum6 += ages[y];
+  y--;
+}
+while (y >= 0); 
+console.log("Using a decrementing do while loop to find the average", + sum6/ ages.length);
 //Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 
 // Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
