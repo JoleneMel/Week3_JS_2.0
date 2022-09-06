@@ -19,6 +19,15 @@ console.log(ages2);
 //As you can see below we can use this logic to make a function 
 console.log(ages[ages.length - 1] - ages[0]);
 
+/* Functions use (parameters) a parameter is the named placeholder for whatever data you want to pass into the function. 
+
+For that reason there are very few occasions where you want to define a parameter within a function, it makes the function which we want to be
+reusable to now only output one time, which is not the optimal way to program. Makes the function not as useful as it could be. 
+
+Console.logs used within functions also can hinder the power of a function, this can make it so it can not properly pass on information to 
+another function and only output the data to the console. 
+*/
+
 //This can also be made into a function 
 function subFirstEleLastEleConsole(array) {
     console.log(array[array.length - 1] - array[0]);
