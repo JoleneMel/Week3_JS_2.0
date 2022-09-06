@@ -69,7 +69,7 @@ console.log("Console.log function");
 subFirstEleLastEleConsole(ages);
 
 console.log("With the return function", +subFirstEleLastEleReturn(ages2));
-
+console.log("");
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
 /*There are a multitude of ways to accomplish this we will need something to hold our total for the calculations*/
@@ -81,7 +81,7 @@ let total = 0;
 */
 ages.forEach(item => total += item); 
 //Then we take the total and divide by the amount of elements within the array aka array/length
-console.log('Average is: ' + ' ' + total / ages.length, + "using the .forEach"); 
+console.log('Average is: ' + ' ' + total / ages.length + "using the .forEach"); 
 console.log("");
 /* Or a for loop or while loop */
 let sum = 0; 
@@ -94,7 +94,7 @@ let sum2 = 0;
 for(let i = ages2.length-1; i >= 0; i--) {
     sum2 += ages2[i];
 }//We need to do the average calulation outside of the loop 
-console.log("Using a decrementing for loop to find the average", + sum2/ ages.length);
+console.log("Using a decrementing for loop to find the average", + sum2/ ages2.length);
 
 //Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 
