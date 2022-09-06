@@ -63,8 +63,19 @@ ages2.push([78]);
 console.log("After I added numbers to the arrays")
 subFirstEleLastEleConsole(ages);
 console.log(subFirstEleLastEleReturn(ages2));
+
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
+/*There are a multitude of ways to accomplish this we will need something to hold our total for the calculations*/
+let total = 0;
+/*https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+ https://www.w3schools.com/jsref/jsref_foreach.asp
+ */
+/*Simply the forEach is doing the same action on every item or element in the array, in this instance we are adding to the total 
+*/
+ages.forEach(item => total += item); 
+//Then we take the total and divide by the amount of elements within the array aka array/length
+console.log('Average is: ' + ' ' + total / ages.length, + "using the .forEach"); 
 
 //Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 
