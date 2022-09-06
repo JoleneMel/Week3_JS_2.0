@@ -30,6 +30,10 @@ subFirstEleLastEleConsole(ages);
 function subFirstEleLastEleReturn(array) {
     return array[array.length - 1] - array[0];
 }
+//In this example this is how we would return the data we would like, a return when it is simple like this can be compared to a question you ask someone
+//The return will provide that answer. 
+
+
 // Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
