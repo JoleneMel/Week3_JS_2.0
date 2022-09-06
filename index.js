@@ -145,6 +145,7 @@ console.log('Average letters is: ' + totesLetters / names.length);
 
 /* Or a for loop or while loop */
 let sumLetters = 0; 
+//need to use names[i].length since it is a string to convert it to a number 
 for(let i = 0; i < names.length; i++) {
     sumLetters += names[i].length;
 }//We need to do the average calulation outside of the loop 
@@ -191,9 +192,10 @@ do {
 }
 while (d >= 0); 
 console.log("Using a decrementing do while loop to find the average", + sumLetters6/ names.length);
+console.log("");
 
+console.log("Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.");
 
-// Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 
 // How do you access the last element of any array?
 
