@@ -263,5 +263,35 @@ let nameLengths = [];
  console.log(nameTotal);
  
 // How do you access the last element of any array?
+//https://flexiple.com/javascript/get-last-array-element-javascript/
+
+//The usual way 
+let arry = [2, 4, 6, 8, 10, 12, 14, 16];
+console.time('array length property');
+let lastElement = arry[arry.length - 1];
+console.log(lastElement);
+//this will prove which is the fastest, thus perfect performance times
+console.timeEnd('array length property');
+
+//The slice() method returns specific elements from an array, as a new array object. This method selects the elements 
+// starting at the given start index and ends at the given end index excluding the element at the end index. 
+// The slice() method does not modify the existing array. Providing one index value returns the element at that 
+// position & a negative index value calculates the index from the end of the array.
+console.time('array slice method');
+let lastElement1 = arry.slice(-1);
+console.log(lastElement1);
+console.timeEnd('array slice method');
+
+
+// The pop() method pops/removes the last element of an array, and returns it. This method changes the length of the array.
+console.time('array pop method');
+let lastElement2 = arry.pop();
+console.log(lastElement2);
+console.timeEnd('array pop method');
+
+//While the first method is the slowest it tends to be what is first learned, and always works 
+//.slice is slightly slower then pop BUT it does not alter your array while pop does, soooooo .slice is the most efficient way when you do not want
+//alter the array
+//.pop is the fastest way but alters the array if the array being altered is not a problem then it is best. 
 
 // How do you access the first element of any array?
