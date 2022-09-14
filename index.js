@@ -295,3 +295,4 @@ console.timeEnd('array pop method');
 //.pop is the fastest way but alters the array if the array being altered is not a problem then it is best. 
 
 // How do you access the first element of any array?
+//
