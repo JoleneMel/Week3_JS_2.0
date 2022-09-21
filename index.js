@@ -345,3 +345,14 @@ console.timeEnd('array find method');
 Within the brackets, the functionality is to identify if the element is other than undefined. 
 As soon as the first element, which is undefined, is found, it gets returned.
 */
+console.log(" ");
+//Using the array splice method~
+/*
+Javascript’s splice(start, deleteCount, item1, item2….) method is used to modify the elements of an array. The splice() method can remove, 
+replace or/and add new elements to the array. This method has a lot of options for it to work, so it is very fun to play with :) 
+
+start: is the index from where the change in the array needs to be done.
+deleteCount/howMany: is the number of elements to be removed from the array. It is an OPTIONAL value.
+item1,item2,… : are the elements that need to be added. It is OPTIONAL if they are not present it means nothing has to be added to the array.
+(link to get more info https://www.w3schools.com/jsref/jsref_splice.asp)
+*/
