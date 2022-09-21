@@ -255,13 +255,14 @@ console.log("");
 let nameLengths = [];
 
 //Write a loop to iterate over the previously created names array 
+console.log("This is is to get the numbers since it is a string you do need item.length")
  names.forEach(item => nameLengths.splice(nameLengths.length, 0, item.length));
  console.log(nameLengths);
-
+console.log("this is to add everything up using the forEach method")
  let nameTotal = 0;
- nameLengths.forEach(item => nameTotal += item.length);
+ nameLengths.forEach(item => nameTotal += item);
  console.log(nameTotal);
- 
+ console.log(" ");
 // How do you access the last element of any array?
 //https://flexiple.com/javascript/get-last-array-element-javascript/
 console.log("How to get the last element of an array")
@@ -307,10 +308,10 @@ console.timeEnd('array [] method');
 
 //using shift method which removes the first element of an array and returns it(not great when you are not wanting to alter the array)
 console.time('array slice method');
-let stringArray = ["Javascript", "Is", "Popular","Language"];
-let firstValue2 = stringArray.shift() ; //modifies the original array
-console.log("First element of array is: " + firstValue2 );
+//let stringArray = ["Javascript", "Is", "Popular","Language"];
+let firstValue2 = arry2.shift() ; //modifies the original array
+console.log("First element of array is: " +  firstValue2);
 console.timeEnd('array slice method');
 // The above code uses the shift() method to get the first element of an array.
 // Note that the shift() method will modify the original array. 
-//That is after implementing shift() the elements left in stringArray will be [ “Is”, “Popular”,”Language” ]
+console.log("The [] method and the slice have about the output with time however slicke seems to be slower more often then not")
