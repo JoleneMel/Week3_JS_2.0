@@ -356,3 +356,13 @@ deleteCount/howMany: is the number of elements to be removed from the array. It 
 item1,item2,… : are the elements that need to be added. It is OPTIONAL if they are not present it means nothing has to be added to the array.
 (link to get more info https://www.w3schools.com/jsref/jsref_splice.asp)
 */
+console.time('splice method');
+let stringArray = ["Javascript", "Is", "Popular","Language"];
+//starting at index 0, deleting 1
+var firstValue4 = stringArray.splice(0,1);
+console.log("First element of array is: " + firstValue4 );
+console.timeEnd('splice method');
+console.log(" ");
+/*In the above code stringArray.splice(0, 1) is used, which will change the stringArray from 0th index, delete 1 element and return the same.
+IF YOU DO NOT WANT TO ALTER YOUR ARRAY DO NOT USE THIS 
+*/
