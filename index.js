@@ -265,8 +265,8 @@ console.log("this is to add everything up using the forEach method")
  console.log(" ");
 // How do you access the last element of any array?
 //https://flexiple.com/javascript/get-last-array-element-javascript/
-console.log("NOTE TIMES PER CONSOLE SEEM TO CHANGE AND MAY BE INCORRECT WHEN CHECKING")
-console.log("How to get the last element of an array")
+console.log("NOTE CONSOLETIMES PER CONSOLE SEEM TO CHANGE AND MAY BE INCORRECT WHEN CHECKING");
+console.log("How to get the last element of an array");
 //The usual way 
 let arry = [2, 4, 6, 8, 10, 12, 14, 16];
 console.time('array length property');
@@ -306,6 +306,7 @@ let firstValue1 = arry2[0];
 console.log(firstValue1);
 console.timeEnd('array [] method');
 //array [] method: 0.01611328125 ms
+console.log(" ");
 
 //using shift method which removes the first element of an array and returns it(not great when you are not wanting to alter the array)
 console.time('array slice method');
@@ -313,9 +314,11 @@ console.time('array slice method');
 let firstValue2 = arry2.shift() ; //modifies the original array
 console.log("First element of array is: " +  firstValue2);
 console.timeEnd('array slice method');
+console.log(" ");
 // The above code uses the shift() method to get the first element of an array.
 // Note that the shift() method will modify the original array. 
 console.log("The [] method and the slice have about the output with time however slicke seems to be slower more often then not");
+console.log(" ");
 
 //How you can use shift if you use filter first to perserve the original array, so filter then shift
 console.time('array filter and slice');
@@ -323,9 +326,22 @@ let arry3 = [2, 4, 6, 8, 10, 12, 14, 16];
 var firstValue3 = arry3.filter(element => typeof element!==undefined).shift();
 console.log("First element of array is: " + firstValue3 );
 console.timeEnd('array filter and slice');
+console.log(" ");
 /*The above code uses the filter() method to get the first element of an array. 
 Within the filter() method, the code will check if the element is undefined or not. Only 
 if the element is not undefined will the shift() method be applied to it to retrieve the first element.
 Note that the filter() method for this case is inefficient as it will loop through all elements and 
 create another array.
+*/
+
+/*Javascript’s find(<callBackFunction>) method will return the first element of the array, which satisfies the functionality provided in the brackets.*/
+console.time('array find method');
+//finding the first element
+let firstItem = arry3.find(element=>element!==undefined);
+//making sure it is not undefined aka the !== undefined, then returns it back
+console.log("First element of array is: " + firstItem );
+console.timeEnd('array find method');
+/*The above code uses the find() method to get the first element of an array.
+Within the brackets, the functionality is to identify if the element is other than undefined. 
+As soon as the first element, which is undefined, is found, it gets returned.
 */
