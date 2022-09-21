@@ -305,6 +305,7 @@ console.time('array [] method');
 let firstValue1 = arry2[0];
 console.log(firstValue1);
 //console.timeEnd('array [] method');
+//look up the differences between timeLog vs timeEnd? which is more actual etc.
 console.timeLog('array [] method');
 //array [] method: 0.01611328125 ms
 console.log(" ");
