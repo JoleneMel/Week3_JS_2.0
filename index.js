@@ -264,7 +264,7 @@ let nameLengths = [];
  
 // How do you access the last element of any array?
 //https://flexiple.com/javascript/get-last-array-element-javascript/
-
+console.log("How to get the last element of an array")
 //The usual way 
 let arry = [2, 4, 6, 8, 10, 12, 14, 16];
 console.time('array length property');
@@ -293,6 +293,24 @@ console.timeEnd('array pop method');
 //.slice is slightly slower then pop BUT it does not alter your array while pop does, soooooo .slice is the most efficient way when you do not want
 //alter the array
 //.pop is the fastest way but alters the array if the array being altered is not a problem then it is best. 
-
+console.log(" "); //to space
 // How do you access the first element of any array?
-//
+//https://thispointer.com/javascript-get-first-element-of-an-array-6-ways/
+//You can access the first element by [], arrays always begin with 0
+console.log("This is for the first object in an array")
+let arry2 = [2, 4, 6, 8, 10, 12, 14, 16];
+console.time('array [] method');
+let firstValue = arry2[0];
+console.log(firstValue);
+console.timeEnd('array [] method');
+//array [] method: 0.01611328125 ms
+
+//using shift method which removes the first element of an array and returns it(not great when you are not wanting to alter the array)
+console.time('array slice method');
+let stringArray = ["Javascript", "Is", "Popular","Language"];
+let firstValue2 = stringArray.shift() ; //modifies the original array
+console.log("First element of array is: " + firstValue2 );
+console.timeEnd('array slice method');
+// The above code uses the shift() method to get the first element of an array.
+// Note that the shift() method will modify the original array. 
+//That is after implementing shift() the elements left in stringArray will be [ “Is”, “Popular”,”Language” ]
