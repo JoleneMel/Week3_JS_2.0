@@ -304,7 +304,8 @@ let arry2 = [2, 4, 6, 8, 10, 12, 14, 16];
 console.time('array [] method');
 let firstValue1 = arry2[0];
 console.log(firstValue1);
-console.timeEnd('array [] method');
+//console.timeEnd('array [] method');
+console.timeLog('array [] method');
 //array [] method: 0.01611328125 ms
 console.log(" ");
 
