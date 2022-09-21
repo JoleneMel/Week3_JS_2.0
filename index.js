@@ -360,9 +360,25 @@ console.time('splice method');
 let stringArray = ["Javascript", "Is", "Popular","Language"];
 //starting at index 0, deleting 1
 var firstValue4 = stringArray.splice(0,1);
-console.log("First element of array is: " + firstValue4 );
+console.log(firstValue4);
 console.timeEnd('splice method');
 console.log(" ");
 /*In the above code stringArray.splice(0, 1) is used, which will change the stringArray from 0th index, delete 1 element and return the same.
 IF YOU DO NOT WANT TO ALTER YOUR ARRAY DO NOT USE THIS 
 */
+
+/*Javascript’s slice(startIndex, endIndex) method returns a shallow copy of a portion of the calling 
+array into a new array object based on indexes passed as arguments. The index is zero-based.
+
+startIndex: is the index to start the extraction.The extraction includes the element at startIndex.
+endIndex: is the index to end the extraction. The extraction excluded the element at endIndex.
+This argument is optional; therefore, if not present, it means to extract array elements till the end of the array.
+*/
+console.time('slice method');
+let arry4 = [2, 4, 6, 8, 10, 12, 14, 16];
+//starting at index 0, deleting 1
+var firstValue5 = arry4.slice(0,1);
+console.log(firstValue5);
+console.timeEnd('slice method');
+console.log(" ");
+/*Here, stringArray.slice(0, 1) is used to extract a sub-string from the 0th index element(included) till 1st index(excluded) element of the array.*/
