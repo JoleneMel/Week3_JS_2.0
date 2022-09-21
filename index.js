@@ -265,6 +265,7 @@ console.log("this is to add everything up using the forEach method")
  console.log(" ");
 // How do you access the last element of any array?
 //https://flexiple.com/javascript/get-last-array-element-javascript/
+console.log("NOTE TIMES PER CONSOLE SEEM TO CHANGE AND MAY BE INCORRECT WHEN CHECKING")
 console.log("How to get the last element of an array")
 //The usual way 
 let arry = [2, 4, 6, 8, 10, 12, 14, 16];
@@ -301,8 +302,8 @@ console.log(" "); //to space
 console.log("This is for the first object in an array")
 let arry2 = [2, 4, 6, 8, 10, 12, 14, 16];
 console.time('array [] method');
-let firstValue = arry2[0];
-console.log(firstValue);
+let firstValue1 = arry2[0];
+console.log(firstValue1);
 console.timeEnd('array [] method');
 //array [] method: 0.01611328125 ms
 
@@ -314,4 +315,17 @@ console.log("First element of array is: " +  firstValue2);
 console.timeEnd('array slice method');
 // The above code uses the shift() method to get the first element of an array.
 // Note that the shift() method will modify the original array. 
-console.log("The [] method and the slice have about the output with time however slicke seems to be slower more often then not")
+console.log("The [] method and the slice have about the output with time however slicke seems to be slower more often then not");
+
+//How you can use shift if you use filter first to perserve the original array, so filter then shift
+console.time('array filter and slice');
+let arry3 = [2, 4, 6, 8, 10, 12, 14, 16];
+var firstValue3 = arry3.filter(element => typeof element!==undefined).shift();
+console.log("First element of array is: " + firstValue3 );
+console.timeEnd('array filter and slice');
+/*The above code uses the filter() method to get the first element of an array. 
+Within the filter() method, the code will check if the element is undefined or not. Only 
+if the element is not undefined will the shift() method be applied to it to retrieve the first element.
+Note that the filter() method for this case is inefficient as it will loop through all elements and 
+create another array.
+*/
