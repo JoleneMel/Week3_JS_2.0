@@ -385,3 +385,5 @@ console.timeEnd('slice method');
 console.log(" ");
 /*Here, stringArray.slice(0, 1) is used to extract a sub-string from the 0th index element(included) till 1st index(excluded) element of the array.*/
 //New Line!!!
+
+//Not up to date
