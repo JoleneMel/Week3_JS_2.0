@@ -1,3 +1,5 @@
+//new new change
+
 //This is a set up for a redo of a old project, saw other ways to do it and I want to do it again but differently 
 // Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
